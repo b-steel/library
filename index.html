@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Bookbook</title>
+  <meta name="author" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="header">
+      <div class="content">
+        <span id="logo"><img src="logo.png" alt="logo">ookbook</span>
+        <button id="modal-btn"><span>+</span></button>
+      </div>
+    </div>
+    <!-- MODAL Add Book-->
+    <div class="modal">
+      <!-- .modal is the modal background, not the actual form itself, that's contained within .modal-content  -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close-btn">&times;</span>
+          <h3>New Book</h3>
+
+        </div>
+        <div class="modal-body">
+          <div class="element">
+            <label for="title-inpt">Title</label>
+            <input type="text" id="title-inpt">
+            <div class="error" id="title-error"></div>
+          </div>
+          <div class="element">
+            <label for="author-inpt">Author</label>
+            <input type="text" id="author-inpt">
+            <div class="error" id="author-error"></div>
+          </div>
+          <div class="element">
+            <label for="is-read-inpt">Read</label>
+            <input type="checkbox" name="" id="is-read-inpt">
+          </div>
+          <div class="right-justify">
+            <button class="btn" id="add-book-btn">Add</button>
+          </div>
+
+
+        </div>
+        <modal-footer>
+
+        </modal-footer>
+
+      </div>
+    </div>
+
+
+    <!-- LIBRARY CONTAINER  -->
+    <div class="library-container content">
+      
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
