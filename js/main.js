@@ -137,7 +137,7 @@ function validateAuthor (author) {
     return true
 }
 // SX Variables and Utilities
-var myLibrary;
+var myLibrary = [];
 const libraryContainer = document.querySelector('.library-container');
 if(!localStorage.getItem('library')) {
     populateLocalStorage();
@@ -146,7 +146,7 @@ if(!localStorage.getItem('library')) {
     renderLibraryOnLoad();
 }
 function populateLocalStorage() {
-    localStorage.setItem('library', JSON.stringify([]));
+    localStorage.setItem('library', JSON.stringify(myLibrary));
 }
 function updateFromLocalStorage () {
     return JSON.parse(localStorage.getItem('library'));
